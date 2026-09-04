@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111724" />
+      <stop offset="100%" stop-color="#0B0F17" />
+    </linearGradient>
+  </defs>
+  <!-- Squircle container -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#2D3A54" stroke-width="2" />
+  <!-- Active / availability status dot -->
+  <circle cx="50" cy="14" r="3.5" fill="#34d399" />
+  <!-- Monogram IN (Isaac Noriega) -->
+  <text x="31" y="42" font-family="'JetBrains Mono', 'Inter', monospace, sans-serif" font-size="25" font-weight="800" fill="url(#brandGrad)" text-anchor="middle" letter-spacing="-1">IN</text>
+</svg>
