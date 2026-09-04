@@ -98,7 +98,7 @@ export const Experience: React.FC = () => {
                   </Badge>
                   <span
                     className={`text-xs font-mono ${
-                      item.active ? 'text-brand-400 font-semibold' : 'text-slate-500'
+                      item.active ? 'text-brand-400 font-semibold' : 'text-slate-400 font-medium'
                     }`}
                   >
                     {item.period}
@@ -111,6 +111,7 @@ export const Experience: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline hover:text-brand-400 inline-flex items-center gap-1.5"
+                      aria-label={`Ver repositorio de ${item.role} en GitHub`}
                       title={`Ver repositorio de ${item.role}`}
                     >
                       <span>{item.role}</span>

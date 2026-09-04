@@ -57,6 +57,7 @@ export const FeaturedProjectCard: React.FC<FeaturedProjectCardProps> = ({
                 variant="muted"
                 size="sm"
                 icon="code"
+                ariaLabel={`Ver código del proyecto ${project.title} en GitHub`}
                 className="text-xs px-4 py-2.5 group-hover:border-brand-500/40"
               >
                 Ver Código

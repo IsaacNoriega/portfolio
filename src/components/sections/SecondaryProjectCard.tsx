@@ -18,13 +18,13 @@ export const SecondaryProjectCard: React.FC<SecondaryProjectCardProps> = ({
       className="bg-surface-card border border-surface-border rounded-xl p-6 flex flex-col justify-between space-y-4 hover:border-brand-500/40 hover:shadow-[0_8px_30px_rgba(99,102,241,0.1)] transition-all duration-300 group"
     >
       <div className="space-y-2">
-        <span className="text-xs font-mono text-slate-500">
+        <span className="text-xs font-mono text-slate-400 font-medium">
           {project.category}
         </span>
         <h4 className="text-base font-bold text-white group-hover:text-brand-300 transition-colors">
           {project.title}
         </h4>
-        <p className="text-xs text-slate-400 leading-relaxed">
+        <p className="text-xs text-slate-300 leading-relaxed">
           {project.description}
         </p>
       </div>
@@ -42,6 +42,7 @@ export const SecondaryProjectCard: React.FC<SecondaryProjectCardProps> = ({
           href={project.linkUrl}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Ver detalles del proyecto ${project.title}`}
           className="inline-flex items-center gap-1.5 text-xs font-medium text-brand-400 hover:text-brand-300 transition-colors"
         >
           <span>Ver detalles</span>

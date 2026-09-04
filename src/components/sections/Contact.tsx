@@ -38,6 +38,7 @@ export const Contact: React.FC = () => {
             icon="chat"
             iconPosition="left"
             target="_blank"
+            ariaLabel={`Enviar mensaje por WhatsApp al número ${profileData.phone}`}
             className="px-6 py-3 shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
           >
             WhatsApp Directo: {profileData.phone}
@@ -51,6 +52,7 @@ export const Contact: React.FC = () => {
             size="lg"
             icon="mail"
             iconPosition="left"
+            ariaLabel={`Enviar correo electrónico a ${profileData.email}`}
             className="px-6 py-3 text-slate-200 hover:border-brand-500/50"
           >
             {profileData.email}
@@ -71,6 +73,7 @@ export const Contact: React.FC = () => {
           href={profileData.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Perfil de GitHub de Isaac Noriega"
           className="hover:text-white transition-colors flex items-center gap-1.5"
         >
           <Icon name="terminal" className="text-sm text-brand-400" />
@@ -82,6 +85,7 @@ export const Contact: React.FC = () => {
           href={profileData.linkedinUrl}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Perfil de LinkedIn de Isaac Noriega"
           className="hover:text-white transition-colors flex items-center gap-1.5"
         >
           <Icon name="badge" className="text-sm text-brand-400" />
@@ -94,6 +98,7 @@ export const Contact: React.FC = () => {
           download="CV_Isaac_Noriega.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Descargar currículum en formato PDF desde el pie de contacto"
           className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer"
         >
           <Icon name="description" className="text-sm text-brand-400" />

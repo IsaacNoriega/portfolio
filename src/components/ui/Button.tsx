@@ -11,6 +11,7 @@ interface ButtonProps {
   className?: string;
   target?: string;
   rel?: string;
+  ariaLabel?: string;
   onClick?: () => void;
 }
 
@@ -24,6 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   target,
   rel,
+  ariaLabel,
   onClick,
 }) => {
   const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-200 gap-2 select-none';
@@ -61,6 +63,7 @@ export const Button: React.FC<ButtonProps> = ({
         className={combinedClasses}
         target={target}
         rel={rel || (target === '_blank' ? 'noopener noreferrer' : undefined)}
+        aria-label={ariaLabel}
       >
         {content}
       </a>
@@ -68,7 +71,7 @@ export const Button: React.FC<ButtonProps> = ({
   }
 
   return (
-    <button type="button" onClick={onClick} className={combinedClasses}>
+    <button type="button" onClick={onClick} className={combinedClasses} aria-label={ariaLabel}>
       {content}
     </button>
   );

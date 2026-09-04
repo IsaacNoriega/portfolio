@@ -58,7 +58,7 @@ export const TechStack: React.FC = () => {
                     className="flex items-center justify-between text-xs py-1.5 px-2.5 rounded bg-surface-base/90 border border-surface-border text-slate-300 hover:border-brand-500/40 hover:text-white transition-all cursor-default"
                   >
                     <span>{tech.name}</span>
-                    <span className="font-mono text-slate-500 text-[11px]">{tech.tag}</span>
+                    <span className="font-mono text-slate-400 text-[11px] font-medium">{tech.tag}</span>
                   </motion.div>
                 ))}
               </div>

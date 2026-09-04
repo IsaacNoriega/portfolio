@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
           <span className="w-2 h-2 rounded-full bg-brand-500 group-hover:scale-125 transition-transform shrink-0" />
           <span className="text-sm tracking-tight truncate">
             {profileData.name}{' '}
-            <span className="text-slate-500 font-normal hidden sm:inline">
+            <span className="text-slate-400 font-normal hidden sm:inline">
               {profileData.titleSuffix}
             </span>
           </span>
@@ -41,6 +41,7 @@ export const Navbar: React.FC = () => {
             download="CV_Isaac_Noriega.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Descargar Currículum Vitae en formato PDF"
             className="hidden sm:inline-flex items-center gap-1.5 text-xs md:text-sm font-medium px-3.5 py-2 rounded-lg bg-surface-card hover:bg-surface-muted text-slate-300 hover:text-white border border-surface-border transition-colors"
           >
             <span className="material-symbols-outlined text-sm text-brand-400">description</span>
@@ -51,6 +52,7 @@ export const Navbar: React.FC = () => {
             href={`mailto:${profileData.email}`}
             variant="primary"
             size="sm"
+            ariaLabel="Enviar un correo de contacto a Isaac Noriega"
             className="text-xs md:text-sm px-4 py-2"
           >
             Contactar
@@ -87,6 +89,7 @@ export const Navbar: React.FC = () => {
             download="CV_Isaac_Noriega.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Descargar Currículum Vitae en PDF desde menú móvil"
             className="flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 py-1.5 transition-colors font-medium border-t border-surface-border pt-3"
           >
             <span className="material-symbols-outlined text-sm">description</span>

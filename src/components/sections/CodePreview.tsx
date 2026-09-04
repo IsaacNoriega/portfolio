@@ -13,7 +13,7 @@ export const CodePreview: React.FC = () => {
           <span className="w-3 h-3 rounded-full bg-slate-700" />
           <span className="w-3 h-3 rounded-full bg-slate-700" />
         </div>
-        <span className="text-xs font-mono text-slate-500">
+        <span className="text-xs font-mono text-slate-400 font-medium">
           {codeCard.fileName}
         </span>
       </div>
@@ -69,7 +69,7 @@ export const CodePreview: React.FC = () => {
           <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
           {codeCard.testedNote}
         </span>
-        <span className="font-mono text-slate-500">{codeCard.version}</span>
+        <span className="font-mono text-slate-400 font-medium">{codeCard.version}</span>
       </div>
     </div>
   );
