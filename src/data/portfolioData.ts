@@ -62,7 +62,7 @@ export const profileData = {
   whatsappUrl: "https://wa.me/526693268769",
   githubUrl: "https://github.com/IsaacNoriega",
   linkedinUrl: "https://www.linkedin.com/in/isaac-noriega-6b54222b9",
-  cvUrl: "#",
+  cvUrl: "/CV_Isaac_Noriega.pdf",
   metrics: [
     { value: "9.14/10", label: "Excelencia Académica (ITESO)" },
     { value: "+8", label: "Proyectos Arquitectónicos & Full-Stack" },

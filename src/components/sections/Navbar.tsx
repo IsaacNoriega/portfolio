@@ -36,6 +36,17 @@ export const Navbar: React.FC = () => {
 
         {/* Actions & Mobile menu toggle */}
         <div className="flex items-center gap-3">
+          <a
+            href={profileData.cvUrl}
+            download="CV_Isaac_Noriega.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 text-xs md:text-sm font-medium px-3.5 py-2 rounded-lg bg-surface-card hover:bg-surface-muted text-slate-300 hover:text-white border border-surface-border transition-colors"
+          >
+            <span className="material-symbols-outlined text-sm text-brand-400">description</span>
+            <span>CV</span>
+          </a>
+
           <Button
             href={`mailto:${profileData.email}`}
             variant="primary"
@@ -71,6 +82,16 @@ export const Navbar: React.FC = () => {
               {link.label}
             </a>
           ))}
+          <a
+            href={profileData.cvUrl}
+            download="CV_Isaac_Noriega.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 py-1.5 transition-colors font-medium border-t border-surface-border pt-3"
+          >
+            <span className="material-symbols-outlined text-sm">description</span>
+            <span>Descargar CV (PDF)</span>
+          </a>
         </div>
       )}
     </header>

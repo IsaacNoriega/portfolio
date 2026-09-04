@@ -91,7 +91,10 @@ export const Contact: React.FC = () => {
         <motion.a
           whileHover={{ y: -2, color: '#ffffff' }}
           href={profileData.cvUrl}
-          className="hover:text-white transition-colors flex items-center gap-1.5"
+          download="CV_Isaac_Noriega.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer"
         >
           <Icon name="description" className="text-sm text-brand-400" />
           <span>Descargar CV (PDF)</span>
