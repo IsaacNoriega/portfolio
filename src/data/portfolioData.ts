@@ -190,6 +190,7 @@ export const experienceData = {
       role: "ReUseITESO",
       company: "Marketplace Institucional (ITESO)",
       active: false,
+      repoUrl: "https://github.com/ReUseITESO/ReUse",
       bullets: [
         "Led agile team developing a gamified digital marketplace for sustainable item exchange within ITESO.",
       ],
